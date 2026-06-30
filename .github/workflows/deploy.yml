@@ -57,7 +57,7 @@ jobs:
 
       # ── 2. Configure GitHub Pages ──────────────────────────────────────────
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@v6
 
       # ── 3. Upload dist/ to Pages ───────────────────────────────────────────
       - name: Upload to GitHub Pages
