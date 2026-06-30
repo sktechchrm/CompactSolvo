@@ -1,0 +1,6 @@
+{
+  "nav": { "dashboard":"ড্যাশবোর্ড","maternity":"মাতৃত্বকালীন সুবিধা","settlement":"চূড়ান্ত নিষ্পত্তি","leftNotice":"অনুমতি ছাড়া অনুপস্থিত","employees":"কর্মী ব্যক্তিগত ফাইল","requisition":"রিকুইজিশন","increment":"বেতন বৃদ্ধি","meeting":"সভা কার্যবিবরণী","grievance":"অভিযোগ","reports":"প্রতিবেদন","authority":"কর্তৃত্ব নিয়ন্ত্রণ","database":"ডাটাবেজ" },
+  "actions": { "save":"সংরক্ষণ করুন","saving":"সংরক্ষণ হচ্ছে...","update":"আপডেট","cancel":"বাতিল","reset":"রিসেট","search":"অনুসন্ধান","export":"এক্সপোর্ট","exportExcel":"Excel এক্সপোর্ট","exportPdf":"PDF ডাউনলোড","print":"প্রিন্ট","add":"যোগ করুন","edit":"সম্পাদনা","delete":"মুছুন","back":"ফিরে যান","close":"বন্ধ","confirm":"নিশ্চিত","retry":"পুনরায় চেষ্টা" },
+  "status": { "loading":"লোড হচ্ছে...","saved":"সংরক্ষিত হয়েছে","error":"ত্রুটি ঘটেছে","empty":"কোনো তথ্য পাওয়া যায়নি","success":"সফল" },
+  "errors": { "generic":"কিছু একটা ভুল হয়েছে। পুনরায় চেষ্টা করুন।","network":"নেটওয়ার্ক ত্রুটি।","unauthorized":"লগইন করুন।","saveError":"সংরক্ষণ ব্যর্থ: {{message}}","deleteConfirm":"এটি স্থায়ীভাবে মুছে যাবে। আপনি কি নিশ্চিত?" }
+}

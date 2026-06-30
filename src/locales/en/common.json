@@ -1,0 +1,6 @@
+{
+  "nav": { "dashboard":"Dashboard","maternity":"Maternity Benefit","settlement":"Final Settlement","leftNotice":"Left Worker Notice","employees":"Personal File","requisition":"Requisition","increment":"Salary Increment","meeting":"Meeting Minutes","grievance":"Grievance","reports":"Reports","authority":"Authority Control","database":"Database Admin" },
+  "actions": { "save":"Save","saving":"Saving...","update":"Update","cancel":"Cancel","reset":"Reset","search":"Search","export":"Export","exportExcel":"Export Excel","exportPdf":"Download PDF","print":"Print","add":"Add","edit":"Edit","delete":"Delete","back":"Back","close":"Close","confirm":"Confirm","retry":"Try again" },
+  "status": { "loading":"Loading...","saved":"Saved successfully","error":"An error occurred","empty":"No records found","success":"Success" },
+  "errors": { "generic":"Something went wrong. Please try again.","network":"Network error. Check your connection.","unauthorized":"You are not logged in.","saveError":"Save failed: {{message}}","deleteConfirm":"This will be permanently deleted. Are you sure?" }
+}
