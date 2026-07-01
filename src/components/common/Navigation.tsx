@@ -18,7 +18,7 @@ import ProfilePanel from "./ProfilePanel";
 import SkipNav from "./SkipNav";
 import SupportPanel from "./SupportPanel";
 
-const skTechLogo = '/rms/logo.png';
+const skTechLogo = '/logo.png';
 
 
 const ALL_HR_MODULES = [
