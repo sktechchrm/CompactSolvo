@@ -24,6 +24,7 @@ function makeFormData(overrides: Partial<MaternityFormData> = {}): MaternityForm
     possibleDeliveryDate: '2024-07-01',
     maternityLeaveStartDate: '2024-05-01',
     maternityLeaveEndDate: '2024-08-28',
+    maternityLeavenoticedDate: '2024-04-15',
     serviceYears: '2',
     serviceMonths: '5',
     serviceDays: '0',
@@ -42,7 +43,7 @@ function makeFormData(overrides: Partial<MaternityFormData> = {}): MaternityForm
     otherBenefitsType: 'দিন',
     otherBenefitsValue: '0',
     ...overrides,
-  };
+  } as MaternityFormData;
 }
 
 // ─────────────────────────────────────────────────────────────────────────────

@@ -18,19 +18,19 @@ interface ImportMetaEnv {
 }
 
 declare global {
+  interface ImportMetaEnv {
+    readonly VITE_SHEETS_URL?: string;
+    readonly VITE_SHEETS_KEY?: string;
+  }
   interface ImportMeta {
     readonly env: ImportMetaEnv;
   }
 }
 
 export const SHEETS_CONFIG = {
-
   url: import.meta.env.VITE_SHEETS_URL || '',
-
   key: import.meta.env.VITE_SHEETS_KEY || '',
-
 } as const;
 
-/** Returns true once both url and key are configured */
 export const isSheetsConfigured = (): boolean =>
   Boolean(SHEETS_CONFIG.url && SHEETS_CONFIG.key);

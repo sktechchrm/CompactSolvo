@@ -8,13 +8,13 @@ interface State { hasError: boolean; error: Error | null; errorId: string | null
 export class ErrorBoundary extends React.Component<Props, State> {
   override state: State = { hasError: false, error: null, errorId: null, copied: false };
 
-  static override getDerivedStateFromError(error: Error): Partial<State> {
-    return { hasError: true, error, errorId: `ERR-${Date.now().toString(36).toUpperCase()}` };
-  }
+static getDerivedStateFromError(error: Error): Partial<State> {
+  return { hasError: true, error, errorId: `ERR-${Date.now().toString(36).toUpperCase()}` };
+}
 
-  override componentDidCatch(error: Error, info: React.ErrorInfo) {
-    console.error(`[ErrorBoundary:${this.props.moduleName ?? 'App'}]`, error, info.componentStack);
-  }
+componentDidCatch(error: Error, info: React.ErrorInfo) {
+  console.error(`[ErrorBoundary:${this.props.moduleName ?? 'App'}]`, error, info.componentStack);
+}
 
   handleRetry = () => this.setState({ hasError: false, error: null, errorId: null, copied: false });
 

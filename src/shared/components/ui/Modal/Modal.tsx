@@ -25,7 +25,7 @@ function useScrollLock(active: boolean) {
 export function Modal({ open, onClose, title, description, children, size='md', closeOnBackdrop=true, showCloseButton=true, className }: ModalProps) {
   const ref = useRef<HTMLDivElement>(null);
   const titleId = useId(); const descId = useId();
-  useFocusTrap(ref, open);
+  useFocusTrap(open);
   useScrollLock(open);
   useEffect(() => {
     if (!open) return;
