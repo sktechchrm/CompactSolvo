@@ -1,4 +1,4 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from 'vitest/config';
 import react from '@vitejs/plugin-react';
 import { copyFileSync } from 'fs';
 import { resolve } from 'path';
@@ -15,7 +15,7 @@ const copyIndexAs404 = {
 };
 
 export default defineConfig({
-  base: '/rms/',
+  base: '/',
   plugins: [react(), copyIndexAs404],
   resolve: {
     alias: { '@': resolve(__dirname, './src') },
