@@ -195,7 +195,8 @@ export interface Committee {
   secretaryGender: Gender;
   secretaryDesignation?: string;   
   secretaryDept?: string;          
-  establishDate?: string;          
+  establishDate?: string;
+  validYear?: string;
   members?: CommitteeMember[];     
 }
 
