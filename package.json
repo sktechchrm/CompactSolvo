@@ -3,7 +3,7 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
-  "homepage": "https://ssumir.github.io/rms",
+  "homepage": "https://sktechchrm.github.io/rms",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
@@ -34,7 +34,7 @@
     "clsx": "^2.1.1",
     "dayjs": "^1.11.13",
     "file-saver": "^2.0.5",
-    "framer-motion": "^12.18.1",
+    "framer-motion": "^11.18.2",
     "html2canvas": "^1.4.1",
     "i18next": "^25.2.1",
     "i18next-browser-languagedetector": "^8.0.5",
