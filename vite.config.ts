@@ -10,7 +10,9 @@ const copyIndexAs404 = {
     try {
       copyFileSync(resolve(dist, 'index.html'), resolve(dist, '404.html'));
       console.log('✅ dist/404.html created');
-    } catch { /* no dist yet in dev */ }
+    } catch {
+      /* no dist yet in dev */
+    }
   },
 };
 
@@ -19,6 +21,7 @@ export default defineConfig({
   plugins: [react(), copyIndexAs404],
   resolve: {
     alias: { '@': resolve(__dirname, './src') },
+    dedupe: ['react', 'react-dom', 'framer-motion'],
   },
   build: {
     target: 'es2020',
@@ -33,7 +36,8 @@ export default defineConfig({
           if (id.includes('@tanstack/react-table')) return 'vendor-table';
           if (id.includes('framer-motion')) return 'vendor-motion';
           if (id.includes('recharts') || id.includes('d3-')) return 'vendor-charts';
-          if (id.includes('@react-pdf') || id.includes('jspdf') || id.includes('html2canvas')) return 'vendor-pdf';
+          if (id.includes('@react-pdf') || id.includes('jspdf') || id.includes('html2canvas'))
+            return 'vendor-pdf';
           if (id.includes('node_modules/xlsx') || id.includes('file-saver')) return 'vendor-excel';
           if (id.includes('react-icons')) return 'vendor-icons';
           if (id.includes('node_modules')) return 'vendor-misc';
